@@ -120,6 +120,71 @@ nav a.active {
   font-size: 1.1rem;
   margin-bottom: 0.8rem;
 }
+/* --- Section Sponsors --- */
+#sponsors {
+  text-align: center;
+  background-color: #f4f6f8;
+}
+
+#sponsors h2 {
+  color: #ea7827;
+  margin-bottom: 1rem;
+}
+
+.remerciements {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.sponsor-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.sponsor-item {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 0.5rem;
+  width: auto;
+  max-width: 250px;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sponsor-item:hover {
+  transform: scale(1.05);
+}
+
+.sponsor-item img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-bottom: 0.25rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sponsor-item h3 {
+  color: #163149;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .sponsor-item {
+    width: 150px;
+  }
+}
 /* --- Galerie Entraineurs --- */
 .Entraineurs {
   text-align: center;
@@ -330,7 +395,8 @@ footer {
 .map-container {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* 16:9 ratio */
+  max-width: 600px;  
+  padding-bottom: 38%;  
   height: 0;
   overflow: hidden;
   border-radius: 8px;
